@@ -23,9 +23,6 @@ students = ["Alice",
             "Xaver"]
 result = []
 
-if len(students) % 2:
-    students.append("** NOBODY **")
-
 while len(result) < 12:
     i = len(result)
     counter = 0                         # counter to prevent deadlock
@@ -50,7 +47,9 @@ while len(result) < 12:
                 temp_result.append((first,second))
                 del temp_students[max(rand_entry1,rand_entry2)]
                 del temp_students[min(rand_entry1,rand_entry2)]
-    if len(temp_result) == math.floor(len(students)/2):          
+    if len(temp_students) == 1:
+        temp_result.append((temp_students[0],"** NOBODY **"))
+    if len(temp_result) == math.ceil(len(students)/2):          
         # if pairing fails on the last pair, the resulting list
         # is one item short; don't add it in that case
         result.append(temp_result)
