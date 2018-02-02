@@ -19,8 +19,30 @@ More information can be found anywhere on the web, such as here: http://www.mont
 1. **Download** the generator script **clockbuddies.py**.
 2. Tell your installation of Python 3 to **run it**: `python3 clockbuddies.py`
 (You can execute it with Python 2, but the output will look slightly strange.)
-3. Pairings will be **printed to *stdout***.
+3. Pairings will be **printed to *stdout***. 
 
-# Code quality
+# Example output:
+```
+Pairings for 1 o'clock:
+         Heidi and Erin
+         Judy and Ted
+         Alice and Olivia
+         Walter and Mallory
+         Victor and Frank
+         Xaver and Bob
+         Sybil and Grace
+         Pat and Dave
+         Carol and ** NOBODY **
+
+************************
+
+Pairings for 2 o'clock:
+         Victor and Dave
+         Grace and Heidi
+         [etc...]
+```
+
+# Code quality and participation
 This script has worked for any case I have thrown at it so far. It is not efficient--if it encounters a problem, it will just try again as often as it needs to. Execution should be near-instantaneous on any halfway modern computer.
+
 Comments and ideas for improvement welcome.
