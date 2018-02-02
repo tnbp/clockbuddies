@@ -14,3 +14,13 @@ Using the Clock Buddy system, the teacher creates 12 different sets of pairs of 
 However, there is one catch: Generating 12 distinct sets of pairs that each include every single student is a computationally difficult task. Hence, this python script to automatically generate 12 pairs and therefore facilitate the use of this system.
 
 More information can be found anywhere on the web, such as here: http://www.montgomeryschoolsmd.org/uploadedFiles/schools/ritchieparkes/staff/What%20Are%20Clock%20Buddies.pdf
+
+# Usage notes
+1. **Download** the generator script **clockbuddies.py**.
+2. Tell your installation of Python 3 to **run it**: `python3 clockbuddies.py`
+(You can execute it with Python 2, but the output will look slightly strange.)
+3. Pairings will be **printed to *stdout***.
+
+# Code quality
+This script has worked for any case I have thrown at it so far. It is not efficient--if it encounters a problem, it will just try again as often as it needs to. Execution should be near-instantaneous on any halfway modern computer.
+Comments and ideas for improvement welcome.
